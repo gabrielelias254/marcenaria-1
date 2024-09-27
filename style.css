@@ -35,6 +35,19 @@ section {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+.galeria-imagens {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.galeria-imagens img {
+    margin: 10px;
+    max-width: 200px; /* Limita a largura das imagens */
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
 footer {
     margin-top: 20px;
 }
