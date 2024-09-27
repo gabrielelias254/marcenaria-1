@@ -1,3 +1,18 @@
+.estante {
+    height: auto;
+    width: 300px;
+}
+
+.mesa {
+    height: auto;
+    width: 300px;
+}
+
+.cozinha {
+    height: auto;
+    width: 300px;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
