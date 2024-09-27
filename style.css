@@ -13,6 +13,13 @@
     width: 300px;
 }
 
+.galeria-imagens img {
+    margin: 10px; /* Espaçamento de 10px entre as imagens */
+    max-width: 200px; /* Limita a largura das imagens */
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
