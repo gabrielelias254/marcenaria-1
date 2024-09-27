@@ -1,16 +1,16 @@
-.estante {
+.mesa {
     height: auto;
-    width: 300px;
+    width: 150px;
 }
 
-.mesa {
+.estante {
     height: auto;
     width: 150px;
 }
 
 .cozinha {
     height: auto;
-    width: 300px;
+    width: 150px;
 }
 
 .galeria-imagens img {
