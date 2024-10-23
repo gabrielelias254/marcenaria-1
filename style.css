@@ -1,7 +1,96 @@
-/* Estilos para elementos de móveis específicos */
-.mesa, .estante, .cozinha {
-    height: auto;
-    width: 150px;
+/* Estilos globais */
+body {
+    font-family: 'Poppins', sans-serif; /* Fonte moderna */
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Cor de fundo suave */
+    color: #333; /* Cor do texto */
+    line-height: 1.6; /* Altura de linha para melhor legibilidade */
+}
+
+/* Cabeçalho */
+header {
+    background-color: #004d00; /* Verde escuro */
+    color: #ffffff; /* Texto branco */
+    padding: 20px 0; /* Espaçamento interno */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
+}
+
+nav ul {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; /* Itens em linha */
+    margin: 0 15px; /* Espaçamento entre itens */
+}
+
+nav a {
+    color: #ffffff; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado */
+    font-weight: 600; /* Texto em negrito */
+    transition: color 0.3s; /* Transição suave para hover */
+}
+
+nav a:hover {
+    color: #ffcc00; /* Cor amarela ao passar o mouse */
+}
+
+/* Seção hero */
+#hero {
+    background-image: url('images/hero-bg.jpg'); /* Imagem de fundo */
+    background-size: cover; /* Cobre toda a área */
+    color: white; /* Texto branco */
+    padding: 100px 0; /* Espaçamento */
+    text-align: center; /* Centraliza o texto */
+    position: relative; /* Para posicionamento de elementos */
+}
+
+#hero::after {
+    content: ""; /* Para criar um overlay escuro */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Fundo escuro transparente */
+    z-index: 1; /* Coloca o overlay atrás do texto */
+}
+
+#hero h2 {
+    font-size: 2.5em; /* Tamanho do título */
+    margin: 0; /* Remove margens */
+    z-index: 2; /* Coloca acima do overlay */
+}
+
+#hero p {
+    font-size: 1.2em; /* Tamanho do parágrafo */
+    z-index: 2; /* Coloca acima do overlay */
+}
+
+/* Botão de contato */
+.btn {
+    display: inline-block;
+    background-color: #ffcc00; /* Amarelo */
+    color: #333; /* Texto escuro */
+    padding: 10px 20px; /* Espaçamento */
+    border-radius: 5px; /* Bordas arredondadas */
+    text-decoration: none; /* Remove o sublinhado */
+    transition: background-color 0.3s; /* Transição suave */
+}
+
+.btn:hover {
+    background-color: #e6b800; /* Tom mais escuro ao passar o mouse */
+}
+
+/* Seções */
+section {
+    margin: 20px 0;
+    background: #ffffff; /* Fundo branco */
+    padding: 30px; /* Espaçamento */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra */
 }
 
 /* Estilos da galeria de imagens */
@@ -14,7 +103,60 @@
 .imagem-item {
     margin: 10px; /* Espaço entre as imagens */
     text-align: center; /* Centraliza o texto abaixo das imagens */
+    transition: transform 0.3s; /* Transição suave ao passar o mouse */
+}
+
+.imagem-item:hover {
+    transform: scale(1.05); /* Aumenta o tamanho ao passar o mouse */
 }
 
 .imagem-galeria {
-   
+    width: 200px; /* Largura padrão da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    max-width: 100%; /* Garante que a imagem não ultrapasse o contêiner */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Sombra leve */
+}
+
+/* Rodapé */
+footer {
+    margin-top: 20px;
+    padding: 15px;
+    background: #004d00; /* Verde escuro */
+    color: #ffffff; /* Texto branco */
+    text-align: center; /* Centraliza o texto */
+    position: relative; /* Para posicionamento */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Sombra no topo */
+}
+
+/* Adicionando estilo para o formulário */
+form {
+    display: flex;
+    flex-direction: column; /* Layout em coluna */
+    max-width: 600px; /* Largura máxima do formulário */
+    margin: 0 auto; /* Centraliza o formulário */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Espaçamento entre os campos */
+}
+
+.form-group label {
+    margin-bottom: 5px; /* Espaçamento entre label e campo */
+    font-weight: bold; /* Texto em negrito */
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%; /* Largura total */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda leve */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: border-color 0.3s; /* Transição suave para a borda */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #ffcc00; /* Cor da borda ao focar */
+    outline: none; /* Remove contorno padrão */
+}
