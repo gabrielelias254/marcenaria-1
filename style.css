@@ -89,16 +89,17 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap:100 px;
+    gap: 20px;
 }
 
 .imagem-item {
-    width: 100px;
+    width: 120px; /* Ajuste do tamanho da imagem */
     text-align: center;
 }
 
 .imagem-galeria {
     width: 100%;
+    max-width: 100px; /* Reduzindo o tamanho máximo da imagem */
     border-radius: 8px;
     transition: transform 0.3s ease;
 }
@@ -110,6 +111,7 @@ p {
 .imagem-item p {
     margin-top: 8px;
     font-weight: 500;
+    font-size: 0.9em; /* Ajuste de tamanho da legenda */
 }
 
 /* Seção de contato */
