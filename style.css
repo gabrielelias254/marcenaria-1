@@ -17,7 +17,7 @@ body {
 header {
     background-color: #4d3a26;
     color: #fff;
-    padding: 100px;
+    padding: 20px;
     text-align: center;
 }
 
@@ -28,7 +28,7 @@ header h1 {
 
 nav ul {
     list-style: none;
-    padding: 100px 0;
+    padding: 10px 0;
     display: flex;
     justify-content: center;
 }
@@ -52,7 +52,7 @@ nav ul li a:hover {
 section {
     padding: 40px 20px;
     margin: 20px auto;
-    max-width: 100px;
+    max-width: 800px;
     text-align: center;
 }
 
@@ -73,7 +73,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-top: 100px;
+    margin-top: 20px;
 }
 
 #produtos li {
@@ -89,7 +89,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 100px;
+    gap: 20px;
 }
 
 .imagem-item {
@@ -100,7 +100,7 @@ p {
 .imagem-galeria {
     width: 100%;
     max-width: 100px; /* Reduzindo o tamanho máximo da imagem */
-    border-radius: 100px;
+    border-radius: 8px;
     transition: transform 0.3s ease;
 }
 
@@ -109,14 +109,14 @@ p {
 }
 
 .imagem-item p {
-    margin-top: 100px;
+    margin-top: 8px;
     font-weight: 500;
     font-size: 0.9em; /* Ajuste de tamanho da legenda */
 }
 
 /* Estilização específica para o armário sob medida */
 .imagem-armario {
-    max: width 100px; /* Diminui o tamanho da imagem específica */
+    max-width: 80px; /* Diminui o tamanho da imagem específica */
     height: auto; /* Mantém a proporção */
 }
 
@@ -136,6 +136,6 @@ footer {
     background-color: #4d3a26;
     color: #f8f5f2;
     text-align: center;
-    padding: 100px;
+    padding: 10px;
     font-size: 0.9em;
 }
