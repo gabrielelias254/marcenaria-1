@@ -114,6 +114,12 @@ p {
     font-size: 0.9em; /* Ajuste de tamanho da legenda */
 }
 
+/* Estilização específica para o armário sob medida */
+.imagem-armario {
+    max-width: 80px; /* Diminui o tamanho da imagem específica */
+    height: auto; /* Mantém a proporção */
+}
+
 /* Seção de contato */
 #contato a {
     color: #4d3a26;
