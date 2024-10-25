@@ -89,11 +89,11 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap:100 px;
 }
 
 .imagem-item {
-    width: 150px;
+    width: 100px;
     text-align: center;
 }
 
