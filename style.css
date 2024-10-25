@@ -93,13 +93,13 @@ p {
 }
 
 .imagem-item {
-    width: 60px; /* Ajuste do tamanho da imagem */
+    width: 200px; /* Ajuste do tamanho da imagem */
     text-align: center;
 }
 
 .imagem-galeria {
-    width: 200%;
-    max-width: 100px; /* Reduzindo o tamanho máximo da imagem */
+    width: 100%;
+    max-width: 400px; /* Reduzindo o tamanho máximo da imagem */
     border-radius: 8px;
     transition: transform 0.3s ease;
 }
