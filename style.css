@@ -116,7 +116,7 @@ p {
 
 /* Estilização específica para o armário sob medida */
 .imagem-armario {
-    max-width: 10px; /* Diminui o tamanho da imagem específica */
+    max-width: 600px; /* Diminui o tamanho da imagem específica */
     height: auto; /* Mantém a proporção */
 }
 
