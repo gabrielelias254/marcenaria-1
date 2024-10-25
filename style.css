@@ -98,7 +98,7 @@ p {
 }
 
 .imagem-galeria {
-    width: 100%;
+    width: 200%;
     max-width: 100px; /* Reduzindo o tamanho máximo da imagem */
     border-radius: 8px;
     transition: transform 0.3s ease;
