@@ -4,82 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Marcenaria Exemplo</title>
+    <title>Marcenaria Exemplo - Loja Virtual</title>
 </head>
 <body>
     <header>
-        <h1>Bem-vindo à Nossa Marcenaria</h1>
+        <h1>Marcenaria Exemplo</h1>
         <nav>
             <ul>
                 <li><a href="#produtos">Produtos</a></li>
                 <li><a href="#sobre">Sobre Nós</a></li>
-                <li><a href="#galeria">Galeria</a></li>
                 <li><a href="#contato">Contato</a></li>
+                <li><a href="#carrinho">Carrinho</a></li>
             </ul>
         </nav>
     </header>
-    
-    <section id="produtos">
-        <h2>Nossos Produtos</h2>
-        <p>Oferecemos móveis artesanais e personalizados, feitos com cuidado e atenção aos detalhes.</p>
-        <ul>
-            <li>Mesas de Jantar</li>
-            <li>Cadeiras</li>
-            <li>Estantes</li>
-            <li>Armários</li>
-            <li>Projetos Personalizados</li>
-        </ul>
-    </section>
-    
-    <section id="sobre">
-        <h2>Sobre Nós</h2>
-        <p>Com mais de 10 anos de experiência, nossa marcenaria se dedica a criar móveis que combinam estética e funcionalidade. Cada peça é única, feita sob medida para atender às necessidades de nossos clientes.</p>
-    </section>
 
-    <section id="galeria">
-        <h2>Galeria</h2>
-        <p>Veja algumas das nossas criações:</p>
-        <div class="galeria-imagens">
-            <div class="imagem-item">
-                <img src="img/img/download.jpeg" alt="mesa" class="imagem-galeria">
-                <p>MESA</p>
+    <section id="destaques">
+        <h2>Destaques</h2>
+        <p>Confira nossos móveis artesanais mais populares.</p>
+        <div class="destaques-produtos">
+            <!-- Exemplos de produtos em destaque -->
+            <div class="produto-item">
+                <img src="img/img/mesa_lateral.png" alt="Mesa Lateral" class="imagem-produto">
+                <p class="nome-produto">Mesa Lateral de Madeira</p>
+                <p class="preco-produto">R$ 499,00</p>
+                <button class="btn-comprar">Adicionar ao Carrinho</button>
             </div>
-            <div class="imagem-item">
-                <img src="img/img/estante1.png" alt="estante" class="imagem-galeria">
-                <p>ESTANTE</p>
-            </div>
-            <div class="imagem-item">
-                <img src="img/img/cozinha.png" alt="cozinha" class="imagem-galeria">
-                <p>COZINHA</p>
-            </div>
-            <div class="imagem-item">
-                <img src="img/img/cadeira.png" alt="cadeira" class="imagem-galeria">
-                <p>CADEIRA</p>
-            </div>
-            <div class="imagem-item">
-                <img src="img/img/armario.png" alt="armário" class="imagem-galeria">
-                <p>ARMÁRIO</p>
-            </div>
-            <div class="imagem-item">
-                <img src="img/img/bancada.png" alt="bancada" class="imagem-galeria">
-                <p>BANCADA</p>
-            </div>
-            <div class="imagem-item">
-                <img src="img/img/moveis_personalizados.png" alt="móveis personalizados" class="imagem-galeria">
-                <p>MÓVEIS PERSONALIZADOS</p>
-            </div>
-            <div class="imagem-item">
-                <img src="img/img/mesa_lateral.png" alt="mesa lateral" class="imagem-galeria">
-                <p>MESA LATERAL</p>
+            <div class="produto-item">
+                <img src="img/img/estante1.png" alt="Estante de Madeira" class="imagem-produto">
+                <p class="nome-produto">Estante de Madeira Rústica</p>
+                <p class="preco-produto">R$ 899,00</p>
+                <button class="btn-comprar">Adicionar ao Carrinho</button>
             </div>
         </div>
     </section>
 
+    <section id="produtos">
+        <h2>Catálogo de Produtos</h2>
+        <div class="catalogo-produtos">
+            <!-- Produtos listados como itens de loja -->
+            <div class="produto-item">
+                <img src="img/img/cadeira.png" alt="Cadeira de Madeira" class="imagem-produto">
+                <p class="nome-produto">Cadeira de Madeira Artesanal</p>
+                <p class="preco-produto">R$ 299,00</p>
+                <button class="btn-comprar">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto-item">
+                <img src="img/img/armario.png" alt="Armário de Madeira" class="imagem-produto">
+                <p class="nome-produto">Armário de Madeira Sob Medida</p>
+                <p class="preco-produto">R$ 1.299,00</p>
+                <button class="btn-comprar">Adicionar ao Carrinho</button>
+            </div>
+            <!-- Mais itens de exemplo -->
+        </div>
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>Com mais de 10 anos de experiência, nossa marcenaria cria móveis que combinam estética e funcionalidade. Cada peça é feita sob medida para atender às necessidades dos clientes.</p>
+    </section>
+
     <section id="contato">
         <h2>Contato</h2>
-        <p>Para mais informações ou consultas, entre em contato:</p>
         <p>Email: <a href="mailto:contato@marcenariaexemplo.com">contato@marcenariaexemplo.com</a></p>
         <p>Telefone: (00) 0000-0000</p>
+    </section>
+
+    <section id="carrinho">
+        <h2>Carrinho</h2>
+        <p>Seu carrinho está vazio.</p>
+        <button class="btn-finalizar">Finalizar Compra</button>
     </section>
 
     <footer>

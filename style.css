@@ -1,125 +1,133 @@
-/* Importando a fonte do Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
-/* Estilos globais */
-body {
-    font-family: 'Poppins', sans-serif; /* Fonte moderna */
+/* Reset básico */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa; /* Cor de fundo suave */
-    color: #333; /* Cor do texto */
-    line-height: 1.6; /* Altura de linha para melhor legibilidade */
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f8f5f2;
+    line-height: 1.6;
 }
 
 /* Cabeçalho */
 header {
-    background-color: #007b5f; /* Verde escuro */
-    color: #ffffff; /* Texto branco */
-    padding: 20px 0; /* Espaçamento interno */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
+    background-color: #4d3a26;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-weight: 700;
 }
 
 nav ul {
-    list-style: none; /* Remove os marcadores da lista */
-    padding: 0;
+    list-style: none;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline; /* Itens em linha */
-    margin: 0 20px; /* Espaçamento entre itens */
+    margin: 0 15px;
 }
 
-nav a {
-    color: #ffffff; /* Cor do link */
-    text-decoration: none; /* Remove o sublinhado */
-    font-weight: 600; /* Texto em negrito */
-    transition: color 0.3s, transform 0.3s; /* Transição suave para hover */
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
 }
 
-nav a:hover {
-    color: #ffc107; /* Amarelo ao passar o mouse */
-    transform: translateY(-2px); /* Eleva ligeiramente o texto */
-}
-
-/* Seção hero */
-#hero {
-    background-image: url('images/hero-bg.jpg'); /* Imagem de fundo */
-    background-size: cover; /* Cobre toda a área */
-    background-position: center; /* Centraliza a imagem */
-    color: white; /* Texto branco */
-    padding: 100px 20px; /* Espaçamento */
-    text-align: center; /* Centraliza o texto */
-    position: relative; /* Para posicionamento de elementos */
-}
-
-#hero::after {
-    content: ""; /* Para criar um overlay escuro */
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Fundo escuro transparente */
-    z-index: 1; /* Coloca o overlay atrás do texto */
-}
-
-#hero h2 {
-    font-size: 3.5em; /* Tamanho do título */
-    margin: 0; /* Remove margens */
-    z-index: 2; /* Coloca acima do overlay */
-}
-
-#hero p {
-    font-size: 1.5em; /* Tamanho do parágrafo */
-    z-index: 2; /* Coloca acima do overlay */
-}
-
-/* Botão de contato */
-.btn {
-    display: inline-block;
-    background-color: #ffc107; /* Amarelo */
-    color: #333; /* Texto escuro */
-    padding: 12px 24px; /* Espaçamento */
-    border-radius: 30px; /* Bordas arredondadas */
-    text-decoration: none; /* Remove o sublinhado */
-    font-weight: bold; /* Texto em negrito */
-    transition: background-color 0.3s, transform 0.3s; /* Transição suave */
-}
-
-.btn:hover {
-    background-color: #e0a800; /* Tom mais escuro ao passar o mouse */
-    transform: translateY(-2px); /* Eleva ligeiramente o botão */
+nav ul li a:hover {
+    color: #f8f5f2;
 }
 
 /* Seções */
 section {
-    margin: 40px 0;
-    background: #ffffff; /* Fundo branco */
-    padding: 40px; /* Espaçamento */
-    border-radius: 15px; /* Bordas arredondadas */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Sombra */
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
 }
 
-/* Estilos da galeria de imagens */
+h2 {
+    font-size: 2em;
+    color: #4d3a26;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+p {
+    margin: 10px 0;
+}
+
+/* Estilo dos produtos */
+#produtos ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+#produtos li {
+    background-color: #e6dac4;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 5px;
+    width: 45%;
+}
+
+/* Galeria de Imagens */
 .galeria-imagens {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Alinha as imagens no centro */
+    justify-content: center;
+    gap: 20px;
 }
 
 .imagem-item {
-    margin: 15px; /* Espaço entre as imagens */
-    text-align: center; /* Centraliza o texto abaixo das imagens */
-    transition: transform 0.3s, box-shadow 0.3s; /* Transições suaves */
-}
-
-.imagem-item:hover {
-    transform: scale(1.05); /* Aumenta o tamanho ao passar o mouse */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra ao passar o mouse */
+    width: 150px;
+    text-align: center;
 }
 
 .imagem-galeria {
-    width: 250px; /* Largura padrão da imagem */
-    height: auto; /* Mantém a proporção da imagem */
-    max-width: 100%; /* Garante que a imagem não ultrapasse o contêiner */
-    border-radius: 15px; /* Bordas arred
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.imagem-item:hover .imagem-galeria {
+    transform: scale(1.05);
+}
+
+.imagem-item p {
+    margin-top: 8px;
+    font-weight: 500;
+}
+
+/* Seção de contato */
+#contato a {
+    color: #4d3a26;
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+#contato a:hover {
+    color: #332e22;
+}
+
+/* Rodapé */
+footer {
+    background-color: #4d3a26;
+    color: #f8f5f2;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+}
