@@ -1,96 +1,70 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Mestre dos Móveis - Loja Virtual</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mestre dos Móveis - Marcenaria Sob Medida</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link para o CSS -->
 </head>
 <body>
-    <header>
-        <h1>Mestre dos Móveis</h1>
-        <nav>
-            <ul>
-                <li><a href="#produtos">Produtos</a></li>
-                <li><a href="#sobre">Sobre Nós</a></li>
-                <li><a href="#contato">Contato</a></li>
-                <li><a href="#carrinho">Carrinho</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="destaques">
-        <h2>Destaques</h2>
-        <p>Confira nossos móveis artesanais mais populares.</p>
-        <div class="destaques-produtos">
-            <div class="produto-item">
-                <img src="mesa lateral" alt="Mesa Lateral" class="imagem-produto">
-                <p class="nome-produto">Mesa Lateral de Madeira</p>
-                <p class="preco-produto">R$ 499,00</p>
-                <button class="btn-comprar">Adicionar ao Carrinho</button>
+<header>
+    <h1>Mestre dos Móveis</h1>
+    <p>Transformando madeira em arte sob medida</p>
+</header>
+
+<nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#portfolio">Portfólio</a>
+    <a href="#contato">Contato</a>
+</nav>
+
+<div class="container">
+    <!-- Seção de Introdução -->
+    <section id="sobre" class="intro">
+        <h2>Bem-vindo à Mestre dos Móveis</h2>
+        <p>Somos especialistas em criar móveis sob medida, combinando design exclusivo com a qualidade da marcenaria artesanal. Nosso trabalho é pensado para atender suas necessidades e transformar seus ambientes.</p>
+    </section>
+
+    <!-- Seção de Portfólio -->
+    <section id="portfolio">
+        <h2>Portfólio</h2>
+        <div class="portfolio">
+            <!-- Imagem 1 -->
+            <div class="item">
+                <img src="imagem1.jpg" alt="Móvel Sob Medida 1">
+                <p>Projeto de móveis para sala de estar, com design moderno e acabamento de alta qualidade.</p>
             </div>
-            <div class="produto-item">
-                <img src="alt="banco-rustico-de-madeira-jpg-.jpeg.class="imagem-produto">
-                <button class="btn-comprar">Adicionar ao Carrinho</button>
+            <!-- Imagem 2 -->
+            <div class="item">
+                <img src="imagem2.jpg" alt="Móvel Sob Medida 2">
+                <p>Móveis planejados para escritório, otimizando espaço com funcionalidade e estética.</p>
             </div>
+            <!-- Imagem 3 -->
+            <div class="item">
+                <img src="imagem3.jpg" alt="Móvel Sob Medida 3">
+                <p>Ambientes corporativos com estilo e sofisticação, projetados especialmente para seu espaço.</p>
+            </div>
+            <!-- Adicione mais imagens conforme necessário -->
         </div>
     </section>
 
-    <section id="produtos">
-        <h2>Catálogo de Produtos</h2>
-        <div class="catalogo-produtos">
-            <div class="produto-item">
-                <img src="cadeira-madeira-estofada-miami-para-mesa-de-jantar-1.webp" alt="Cadeira de Madeira" class="imagem-produto">
-                <p class="nome-produto">Cadeira de Mesa Artesanal</p>
-                <p class="preco-produto">R$ 299,00</p>
-                <button class="btn-comprar">Adicionar ao Carrinho</button>
-            </div>
-            <div class="produto-item">
-                <img src="d2e4971690a4a48aae124767516d21f6.jpg" alt="Estante de Cozinha" class="imagem-produto">
-                <p class="nome-produto">Estante de Cozinha Sob Medida</p>
-                <p class="preco-produto">R$ 1.299,00</p>
-                <button class="btn-comprar">Adicionar ao Carrinho</button>
-            </div>
-            <div class="produto-item">
-                <img src="" alt="Mesa de Jantar" class="imagem-produto">
-                <p class="nome-produto">Mesa de Jantar de Madeira</p>
-                <p class="preco-produto">R$ 1.199,00</p>
-                <button class="btn-comprar">Adicionar ao Carrinho</button>
-            </div>
-            <div class="produto-item">
-                <img src="estante_industrial_sob_medida_Madelab_moveis_.jpg" alt="Sofá Artesanal" class="imagem-produto">
-                <p class="nome-produto">Sofá Artesanal de Madeira</p>
-                <p class="preco-produto">R$ 2.499,00</p>
-                <button class="btn-comprar">Adicionar ao Carrinho</button>
-            </div>
-            <div class="produto-item">
-                <img src="banco-rustico-de-madeira-jpg-.jpeg" alt="Banco Rústico" class="imagem-produto">
-                <p class="nome-produto">Banco Rústico de Madeira</p>
-                <p class="preco-produto">R$ 399,00</p>
-                <button class="btn-comprar">Adicionar ao Carrinho</button>
-            </div>
-        </div>
+    <!-- Seção de Contato -->
+    <section id="contato" class="contact">
+        <h2>Entre em Contato</h2>
+        <form action="#" method="POST">
+            <input type="text" name="nome" placeholder="Seu Nome" required>
+            <input type="email" name="email" placeholder="Seu E-mail" required>
+            <textarea name="mensagem" placeholder="Sua Mensagem" rows="5" required></textarea>
+            <button type="submit">Enviar Mensagem</button>
+        </form>
     </section>
+</div>
 
-    <section id="sobre">
-        <h2>Sobre Nós</h2>
-        <p>Com mais de 10 anos de experiência, nossa marcenaria cria móveis que combinam estética e funcionalidade. Cada peça é feita sob medida para atender às necessidades dos clientes.</p>
-    </section>
+<footer class="footer">
+    <p>&copy; 2024 Mestre dos Móveis | Todos os direitos reservados</p>
+</footer>
 
-    <section id="contato">
-        <h2>Contato</h2>
-        <p>Email: <a href="mailto:contato@mestredosmoveis.com">contato@mestredosmoveis.com</a></p>
-        <p>Telefone: (00) 0000-0000</p>
-    </section>
-
-    <section id="carrinho">
-        <h2>Carrinho</h2>
-        <p>Seu carrinho está vazio.</p>
-        <button class="btn-finalizar">Finalizar Compra</button>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Mestre dos Móveis. Todos os direitos reservados.</p>
-    </footer>
 </body>
 </html>
